@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+   <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <nav>
+        <a href="#"><span class="head">Get EveryThing</span></a>
+        <a href="#">Mobiles</a>
+        <a href="#">Laptops</a>
+        <a href="#">Furniture</a>
+        <a href="#">Devices</a>
+        <a href="#">Electronics</a>
+        <a><span class="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></span></a>
+    </nav>
+    
+    <div class="products-main">
+        <div class="head">
+            <h2>Products</h2>
+        </div>
+        <div class="product-list">
+
+            <div class="product" data-name="Product 1" data-price="10.99">
+
+                Product 1 - $10.99 <button onclick="addToCart('Product 1', 10.99)" class="button-products">Add to Cart</button>
+                
+            </div>
+            <div class="product" data-name="Product 2" data-price="19.99">
+
+                Product 2 - $19.99 <button onclick="addToCart('Product 2', 19.99)" class="button-products">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Product 3" data-price="19.99">
+
+                Product 3- $15.99 <button onclick="addToCart('Product 3', 15.99)" class="button-products">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Product 4" data-price="19.99">
+
+                Product 4 - $18.99 <button onclick="addToCart('Product 4', 18.99)" class="button-products">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Product 5" data-price="19.99">
+
+                Product 5 - $14.99 <button onclick="addToCart('Product 5', 14.99)" class="button-products">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Product 6" data-price="19.99">
+
+                Product 6 - $28.99 <button onclick="addToCart('Product 6', 28.99)" class="button-products">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Product 7" data-price="19.99">
+
+                Product 7 - $13.99 <button onclick="addToCart('Product 7', 13.99)" class="button-products">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Product 8" data-price="19.99">
+
+                Product 8 - $11.99 <button onclick="addToCart('Product 8', 11.99)" class="button-products">Add to Cart</button>
+            </div>
+
+        </div>
+        
+    </div>
+    
+    
+    <div id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-cost">0.00</span></p>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
