@@ -37,7 +37,7 @@ nav a{
     border:1px solid black;
     width:95%;
     background-color: rgba(223, 225, 225, 0.337);
-    margin-bottom:50px;
+    margin-bottom:20px;
 }
 .product-list{
     display: flex;
@@ -68,4 +68,10 @@ nav a{
     background: white;
     padding: 20px;
     border: 1px solid black;
+}
+
+@media (max-width:600px) {
+    .hide{
+        display: none;
+    }
 }
